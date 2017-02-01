@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>Finsa Mex</title> 
+	<link href="estilos/StyleSheet.css" rel="stylesheet"/> 
+	<link href="estilos/StyleSheet1.css" rel="stylesheet"/>
+</head> 
+<body> 
+	<form class="contact_form" action="alta_prod.php" method="post" name="form" id="alta_prod" runat="server">
+		<div> 
+			<ul> 
+				<li> 
+					<h2>Hacer pedido</h2>
+				</li> 
+				<li> 
+					<label for="nombre">Nombre:</label> 
+					<input id="nombre" name="nombre" type="text" placeholder="Carlos Mape" autofocus required title="Nesesita llenar este campo"/> 
+				</li>
+				<li> 
+					<label for="apellido">Apellidos:</label> 
+					<input id="apellido" name="apellido" type="text" placeholder="Flores Mesa" autofocus required title="Nesesita llenar este campo"/> 
+				</li>
+				<li> 
+					<label for="letefono">Teléfono:</label> 
+					<input id="telefono" name="telefono" type="text" placeholder="9191456797" autofocus required title="Nesesita llenar este campo"/> 
+				</li>
+				<li> 
+					<label for="email">Email:</label> 
+					<input id="email" type="email" name="email" placeholder="carlos@hotmail.com" autofocus required title="Nesesita llenar este campo"/> 
+					<span class="form_hint">Formato correcto: "carlos@hotmail/gmail/outlook.com"</span> 
+				</li> 
+				<li> 
+					<label for="direccion">Dirección:</label> 
+					<input id="direccion" name="direccion" type="text" placeholder="3ra calle Ote N3 Barrio Centro Ocosingo" autofocus required title="Nesesita llenar este campo"/>
+					<span class="form_hint">Formato correcto: "calle-colonia/barrio-lugar"</span> 
+				</li> 
+				<li> 
+					<label for="Producto">Producto:</label>
+					<div class="styled-select slate">
+						<select id="producto" name="producto">
+							<option>Seleccione un producto</option>
+							<option value="granolados">Granolados</option>
+						    <option value="Solubles">Solubles</option>
+						    <option value="Foliares">Foliares</option>
+						    <option value="Herbicidas">Herbicidas</option>
+						    <option value="Insecticidas">Insecticidas</option>
+						    <option value="Fungicidas">Fungicidas</option>
+						    <option value="Maltacleiton">Maltacleiton</option>
+						    <option value="Nutrolain">Nutrolain</option>
+						    <option value="talabarteria">talabarteria</option>
+						</select>
+					</div>
+				<li> 
+					<label for="describir">Describir:</label> 
+					<textarea id="descripcion" name="descripcion" type="textarea" required title="Nesesita llenar este campo"/>
+					</textarea>
+				</li> 
+				<li> 
+					<button class="submit" type="submit">Enviar pedido</button> 
+				</li> 
+			</ul> 
+		</div> 
+	</form> 
+</body> 
+</html>
+
